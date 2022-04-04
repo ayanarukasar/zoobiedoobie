@@ -1,0 +1,51 @@
+package com.cg;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MyController{
+	
+	@RequestMapping("/login")
+	public String getLogin() {
+		return "Login";
+	}
+	
+	@ModelAttribute("showdata")
+	
+	public String getData() {
+		return "ModelData";
+	}
+	
+	
+	
+	@RequestMapping("/reg")
+	public String getReg(@ModelAttribute ("emp")Employee e,Model m) {
+		
+		System.out.println(e.getEno()+"  "+e.getEname()+"  "+e.getSal());
+		
+		
+		
+		return "Reg";
+		
+		
+		
+		
+	}
+	@RequestMapping("/emp")
+	public String getEmp()
+	{
+		return "Emp";
+	}
+	
+	@RequestMapping("/hello")
+	public String sayHello(Model m) {
+		
+		m.addAttribute("m1","Lucknow");
+		m.addAttribute("m2","Pune");
+		return "Hello";
+
+	}
+}

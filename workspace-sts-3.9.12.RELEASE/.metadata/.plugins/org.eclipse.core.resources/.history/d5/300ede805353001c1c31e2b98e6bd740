@@ -1,0 +1,58 @@
+package com.cg;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.NonNull;
+
+public class Employee {
+	
+	
+	
+	Integer eno;
+	
+	String ename;
+	
+	int sal;
+
+	public Employee() {
+		super();
+	}
+
+	public Employee(Integer eno, String ename, int sal) {
+		super();
+		this.eno = eno;
+		this.ename = ename;
+		this.sal = sal;
+	}
+
+	public Integer getEno() {
+		return eno;
+	}
+
+	public void setEno(Integer eno) {
+		this.eno = eno;
+	}
+
+	public String getEname() {
+		return ename;
+	}
+
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+
+	public int getSal() {
+		return sal;
+	}
+
+	public void setSal(int sal) {
+		this.sal = sal;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [eno=" + eno + ", ename=" + ename + ", sal=" + sal + "]";
+	}
+	
+	
+
+}

@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="reg"> 
+
+Eno:-<input type="text" name="eno" width="20"/><br>
+Ename:-<input type="text" name="ename" width="20"/><br>
+Sal:-<input type="text" name="sal" width="20"/><br>
+<input type="Submit" value="submit"/>
+
+</form>
+
+</body>
+</html>
